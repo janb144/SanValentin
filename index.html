@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Rusbert 💖</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="init();"> <canvas id="testCanvas"></canvas>
+
+    <div id="wrapper">
+        <h2 id="question">¿Quieres ser mi Valentine? 💖</h2> 
+        <img id="gif" alt="gif" src="https://media.giphy.com/media/FTGah7Mx3ss04PcasF/giphy.gif" />
+
+        <div id="btn-group">
+            <button id="yes-btn">Sí</button> 
+            <button id="no-btn">No</button> 
+        </div>
+
+        <div id="details" style="display:none;">
+            <h2>Nuestra promesa de amor comenzó hace...</h2>
+            <div id="contador"></div> 
+            
+            <div class="music-player">
+                <p>🎶 Nuestra canción:</p> 
+                <audio id="player" controls>
+                    <source src="https://raw.githubusercontent.com/janb144/SanValentin/main/cancion.mp3" type="audio/mpeg"> 
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.createjs.com/1.0.0/easeljs.min.js"></script> 
+    <script src="script.js"></script>
+</body>
+</html>
